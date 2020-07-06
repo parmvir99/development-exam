@@ -11,9 +11,9 @@
 <body>
   <div class="container">
     <div class="row py-3">
-      <div class="col-md-6">
+      <div class="col-md-6 d-flex align-items-center">
         <img src="assets/images/logo.jpg" alt="LegalMatch" class="w-50">
-        <h6 class="tagline align-bottom d-inline-block pb-2">FIND THE RIGHT LAWYER</h6>
+        <h6 class="tagline align-bottom mb-0 mt-2 ml-1">FIND THE RIGHT LAWYER</h6>
       </div>
       <div class="col-md-6 text-right">
         <div class="d-inline-block text-left">
@@ -25,23 +25,76 @@
     </div>
   </div>
   <div class="gradient-bg py-4">
-    <div class="container">
+    <div class="container mt-2">
       <div class="row">
         <div class="col-md-12">
-          <h1 class="font-weight-light text-light mb-0">Find a Laywer for your Legal Issue</h1>
-          <h3 class="text-light">Fast, Free and Confidential</h3>
+          <h2 class="font-weight-light text-light mb-1">Find a Laywer for your Legal Issue</h2>
+          <h4 class="text-light">Fast, Free and Confidential</h4>
         </div>
-        <div class="col-md-6">form</div>
+        <div class="col-md-6">
+          <!-- <div class="form-group mt-4 w-75 autocomplete">
+            <label class="text-light">Enter Zip Code or City</label>
+            <input type="email" class="form-control" id="myInput">
+          </div> -->
+          <form autocomplete="off" action="/action_page.php">
+            <div class="autocomplete" style="width:300px;">
+              <input id="myInput" type="text" name="myCountry" placeholder="Country">
+            </div>
+            <input type="submit">
+          </form>
+        </div>
         <div class="col-md-6 text-light">
           <h5 class="font-weight-light mb-4">Clients review LegalMatch lawyers</h5>
-          <div class="d-flex">
-            <div class="text-center col-3 pr-0">
+          <div class="d-flex border-bottom-transparent mb-4">
+            <div class="text-center col-3 px-0">
               <img src="assets/images/lawyer.png" alt="lawyer">
               <strong class="d-block mt-1">Mitchell M.</strong>
               <p class="font-weight-light">Cherry Hill, NJ</p>
             </div>
             <div class="ml-3">
-              <span class="font-weight-bold">Family Law</span>
+              <span class="font-weight-bold mr-4">Family Law</span>
+              <span>
+                <i class="fa fa-star star-color"></i>
+                <i class="fa fa-star star-color"></i>
+                <i class="fa fa-star star-color"></i>
+                <i class="fa fa-star star-color"></i>
+                <i class="fa fa-star star-color"></i>
+              </span>
+              <i class="d-block mt-2 font-weight-light small">
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ut et aliqua ...
+              </i>
+              <a href="#" class="font-weight-light mt-2 text-right small d-block">Read Review <i class="fa fa-book ml-2"></i></a>
+            </div>
+          </div>
+          <div class="d-flex border-bottom-transparent mb-4">
+            <div class="text-center col-3 px-0">
+              <img src="assets/images/lawyer.png" alt="lawyer">
+              <strong class="d-block mt-1">Mitchell M.</strong>
+              <p class="font-weight-light">Cherry Hill, NJ</p>
+            </div>
+            <div class="ml-3">
+              <span class="font-weight-bold mr-4">Family Law</span>
+              <span>
+                <i class="fa fa-star star-color"></i>
+                <i class="fa fa-star star-color"></i>
+                <i class="fa fa-star star-color"></i>
+                <i class="fa fa-star star-color"></i>
+                <i class="fa fa-star star-color"></i>
+              </span>
+              <i class="d-block mt-2 font-weight-light small">
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ut et aliqua ...
+              </i>
+              <a href="#" class="font-weight-light mt-2 text-right small d-block">Read Review <i class="fa fa-book ml-2"></i></a>
+            </div>
+          </div>
+          <div class="d-flex border-bottom-transparent mb-4">
+            <div class="text-center col-3 px-0">
+              <img src="assets/images/lawyer.png" alt="lawyer">
+              <strong class="d-block mt-1">Mitchell M.</strong>
+              <p class="font-weight-light">Cherry Hill, NJ</p>
+            </div>
+            <div class="ml-3">
+              <span class="font-weight-bold mr-4">Family Law</span>
               <span>
                 <i class="fa fa-star star-color"></i>
                 <i class="fa fa-star star-color"></i>
@@ -59,5 +112,26 @@
       </div>
     </div>
   </div>
+  <div class="container py-4 border-bottom-grey mb-5 mt-3">
+    <div class="row">
+      <div class="col-md-2">
+        <img src="assets/images/logo.jpg" alt="LegalMatch" class="w-100">
+        <p class="tagline xsmall">FIND THE RIGHT LAWYER NOW</p>
+      </div>
+      <div class="col-md-8 text-center">
+        <a hre="#" class="text-grey small">User Agreement</a>
+        <span class="text-grey mx-3">&bull;</span>
+        <a hre="#" class="text-grey small">Privacy Policy</a>
+        <span class="text-grey mx-3">&bull;</span>
+        <a hre="#" class="text-grey small">Site Map</a>
+        <p class="text-grey mt-4 small">Copyright 1999-2016 LegalMatch. All rights reserved. LegalMatch®, the LegalMatch logo, and the tradedress are trademarks of LegalMatch. Patents Pending.</p>
+      </div>
+      <div class="col-md-2 text-right">
+        <img src="assets/images/truste.png" alt="LegalMatch" class="mb-3">
+        <img src="assets/images/bbb-accredited.png" alt="LegalMatch">
+      </div>
+    </div>
+  </div>
+  <script src="js/custom.js"></script>
 </body>
 </html>
