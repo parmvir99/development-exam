@@ -22,3 +22,20 @@
 body {
    font-family: 'Gotham' !important;
  }
+ a {
+   color:#fbd243 !important;
+ }
+
+.tagline {
+  color:#012566;
+}
+.gradient-bg {
+background: #136fad; /* Old browsers */
+background: -moz-radial-gradient(center, ellipse cover,  #136fad 0%, #032d6c 100%); /* FF3.6-15 */
+background: -webkit-radial-gradient(center, ellipse cover,  #136fad 0%,#032d6c 100%); /* Chrome10-25,Safari5.1-6 */
+background: radial-gradient(ellipse at center,  #136fad 0%,#032d6c 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#136fad', endColorstr='#032d6c',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+.star-color{
+  color:#d89108;
+}
