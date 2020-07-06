@@ -11,11 +11,11 @@
 <body>
   <div class="container">
     <div class="row py-3">
-      <div class="col-md-6 d-flex align-items-center">
-        <img src="assets/images/logo.jpg" alt="LegalMatch" class="w-50">
-        <h6 class="tagline align-bottom mb-0 mt-2 ml-1">FIND THE RIGHT LAWYER</h6>
+      <div class="col-md-6 d-md-flex align-items-center">
+        <img src="assets/images/logo.jpg" alt="LegalMatch" class="w-75">
+        <h6 class="tagline align-bottom mb-md-0 mt-2 ml-1">FIND THE RIGHT LAWYER</h6>
       </div>
-      <div class="col-md-6 text-right">
+      <div class="col-md-6 text-md-right">
         <div class="d-inline-block text-left">
           <p class="mb-0"><i class="fa fa-check mr-1 text-success"></i>No free to present your case</p>
           <p class="mb-0"><i class="fa fa-check mr-1 text-success"></i>Choose from lawyers in your area</p>
@@ -27,27 +27,37 @@
   <div class="gradient-bg py-4">
     <div class="container mt-2">
       <div class="row">
-        <div class="col-md-12">
+        <div class="col-md-12 text-lg-left text-center">
           <h2 class="font-weight-light text-light mb-1">Find a Laywer for your Legal Issue</h2>
           <h4 class="text-light">Fast, Free and Confidential</h4>
         </div>
-        <div class="col-md-6">
-          <!-- <div class="form-group mt-4 w-75 autocomplete">
-            <label class="text-light">Enter Zip Code or City</label>
-            <input type="email" class="form-control" id="myInput">
-          </div> -->
-          <form autocomplete="off" action="/action_page.php">
-            <div class="autocomplete" style="width:300px;">
-              <input id="myInput" type="text" name="myCountry" placeholder="Country">
-            </div>
-            <input type="submit">
-          </form>
+        <div class="col-lg-6 col-md-12 text-lg-left text-center">
+          <div class="form-group mt-4 w-75 search mx-lg-0 mx-auto">
+            <label class="text-light">Enter Zip Code or City:</label>
+            <form autocomplete="off" class="mb-0">
+              <input type="text" id="myInput" onkeyup="myFunction()" class="form-control">
+            </<form>
+            <ul id="myUL" class="bg-light text-left  pl-2">
+              <li><a href="#" class="text-dark small">NoWhereville XX 0000</a></li>
+            </ul>
+          </div>
+          <div class="form-group w-75 mx-lg-0 mx-auto">
+            <label class="text-light">Choose a Category:</label>
+            <select class="form-control" onchange="openModalCategory()">
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+              <option>5</option>
+            </select>
+            <p class="text-center text-light mt-3">Can't find your category? <a href="#" class="text-grey" onclick="openCategoryListModal()">Click here.</a></p>
+          </div>
         </div>
-        <div class="col-md-6 text-light">
-          <h5 class="font-weight-light mb-4">Clients review LegalMatch lawyers</h5>
+        <div class="col-lg-6 col-md-12 text-light mt-lg-0 mt-4">
+          <h5 class="font-weight-light mb-4 text-lg-left text-center">Clients review LegalMatch lawyers</h5>
           <div class="d-flex border-bottom-transparent mb-4">
             <div class="text-center col-3 px-0">
-              <img src="assets/images/lawyer.png" alt="lawyer">
+              <img src="assets/images/lawyer3.png" alt="lawyer">
               <strong class="d-block mt-1">Mitchell M.</strong>
               <p class="font-weight-light">Cherry Hill, NJ</p>
             </div>
@@ -68,7 +78,7 @@
           </div>
           <div class="d-flex border-bottom-transparent mb-4">
             <div class="text-center col-3 px-0">
-              <img src="assets/images/lawyer.png" alt="lawyer">
+              <img src="assets/images/lawyer3.png" alt="lawyer">
               <strong class="d-block mt-1">Mitchell M.</strong>
               <p class="font-weight-light">Cherry Hill, NJ</p>
             </div>
@@ -89,7 +99,7 @@
           </div>
           <div class="d-flex border-bottom-transparent mb-4">
             <div class="text-center col-3 px-0">
-              <img src="assets/images/lawyer.png" alt="lawyer">
+              <img src="assets/images/lawyer3.png" alt="lawyer">
               <strong class="d-block mt-1">Mitchell M.</strong>
               <p class="font-weight-light">Cherry Hill, NJ</p>
             </div>
@@ -114,11 +124,11 @@
   </div>
   <div class="container py-4 border-bottom-grey mb-5 mt-3">
     <div class="row">
-      <div class="col-md-2">
-        <img src="assets/images/logo.jpg" alt="LegalMatch" class="w-100">
+      <div class="col-lg-2 col-md-6 col-8">
+        <img src="assets/images/logo.jpg" alt="LegalMatch" class="w-75">
         <p class="tagline xsmall">FIND THE RIGHT LAWYER NOW</p>
       </div>
-      <div class="col-md-8 text-center">
+      <div class="col-md-8 text-lg-center text-left">
         <a hre="#" class="text-grey small">User Agreement</a>
         <span class="text-grey mx-3">&bull;</span>
         <a hre="#" class="text-grey small">Privacy Policy</a>
@@ -126,12 +136,45 @@
         <a hre="#" class="text-grey small">Site Map</a>
         <p class="text-grey mt-4 small">Copyright 1999-2016 LegalMatch. All rights reserved. LegalMatch®, the LegalMatch logo, and the tradedress are trademarks of LegalMatch. Patents Pending.</p>
       </div>
-      <div class="col-md-2 text-right">
-        <img src="assets/images/truste.png" alt="LegalMatch" class="mb-3">
+      <div class="col-md-2 text--md-right text-left mt-md-0 mt-4">
+        <img src="assets/images/truste.png" alt="LegalMatch" class="mb-3 mr-md-0 mr-4">
         <img src="assets/images/bbb-accredited.png" alt="LegalMatch">
       </div>
     </div>
   </div>
+  <!-- category modal -->
+  <div id="categoryModal" class="modal fade">
+    <div class="modal-content modal-dialog">
+      <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Category Modal</h5>
+        <button type="button" class="close closeCategoryModal" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+    </div>
+  </div>
+</div>
+
+  <!-- category list modal -->
+  <div id="categoryListModal" class="modal fade">
+    <div class="modal-content modal-dialog">
+      <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Category List Modal</h5>
+        <button type="button" class="close closeCategoryListModal" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+    </div>
+  </div>
+</div>
   <script src="js/custom.js"></script>
 </body>
 </html>
