@@ -39,3 +39,14 @@ function openCategoryListModal() {
   categoryListModal.style.display = "block";
   categoryListModal.classList.add("show");
 }
+
+// Review Modal
+var reviewModal = document.getElementById("reviewModal");
+var reviewModalClose = document.getElementsByClassName("reviewModalClose")[0];
+reviewModalClose.onclick = function() {
+  reviewModal.style.display = "none";
+}
+function openReviewModal() {
+  reviewModal.style.display = "block";
+  reviewModal.classList.add("show");
+}
