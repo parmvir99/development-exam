@@ -31,6 +31,21 @@ body {
 .border-bottom-grey {
   border-bottom:1px solid #eaeaea;
 }
+.border-0 {
+  border:0 !important:;
+}
+.border-radius-20{
+  border-radius: 20px !important;
+}
+.border-radius-100{
+  border-radius: 100% !important;
+}
+.bg-dark-blue{
+  background:#063a79 !important
+}
+.bg-orange{
+  background:#dc920b !important
+}
 .text-grey {
   color:#b2b8bd !important;
 }
@@ -40,6 +55,12 @@ body {
 }
 .tagline {
   color:#012566;
+}
+.link {
+  color:#2c99ea !important;
+  text-decoration:none !important;
+  font-size:13px;
+  font-weight:100 !important;
 }
 .gradient-bg {
 background: #136fad; /* Old browsers */
@@ -58,4 +79,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#136fad', end
 .search li {
   display:none;
   background:#fff;
+}
+.modal {
+  background:#00000047;
 }
